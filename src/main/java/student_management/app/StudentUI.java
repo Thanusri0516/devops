@@ -154,8 +154,12 @@ public class StudentUI extends JFrame {
 
     // ===== MAIN =====
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new StudentUI().setVisible(true);
+
+        System.out.println("Program started...");
+
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            StudentUI ui = new StudentUI();
+            ui.setVisible(true);
         });
     }
 }
